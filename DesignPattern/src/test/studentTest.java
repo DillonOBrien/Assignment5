@@ -45,24 +45,4 @@ public class studentTest {
 	public void testRemoveWithEmptyList(){
 		Classmates.remove(0);
 	}
-	@Test
-	public void testAddElements(){
-		Classmates.add("Karol" + " " + "");
-		Classmates.add("Vanessa");
-		Classmates.add(2, "Amanda");
-		
-		assertEquals("Karol", Classmates.get(0));
-		assertEquals("Vanessa", Classmates.get(1));
-		assertEquals("Amanda", Classmates.get(2));
-		
-		Classmates.add(1, "Mariana");
-		
-		assertEquals("Karol", Classmates.get(0));
-		assertEquals("Mariana", Classmates.get(1));
-		assertEquals("Vanessa", Classmates.get(2));
-		assertEquals("Amanda", Classmates.get(3));	
-		
-		assertTrue(Classmates.size()==4);
-	}
-
 }
